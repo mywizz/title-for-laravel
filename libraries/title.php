@@ -38,7 +38,7 @@ class Title {
 	{
 		if ( ! $title OR strlen(trim($title)) === 0) return;
 		
-		static::$titles[] = trim($title);
+		static::$titles[] = trim(strip_tags($title));
 	}
 	
 	// ---------------------------------------------------------------------
